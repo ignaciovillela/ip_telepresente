@@ -4,10 +4,25 @@
     box-sizing: border-box;
 }
 
+.img-40 {
+    width: 40px;
+    height: 40px;
+}
+
+.img-30 {
+    width: 30px;
+    height: 30px;
+}
+
+.my-n1 {
+    margin-top: -5px;
+    margin-bottom: -5px;
+}
+
 #main-menu {
     padding: 16px;
     font-size: 22px;
-    background: #112d4e;
+    background: #133f73;
     color: white;
     cursor: pointer;
     display: none;
@@ -34,6 +49,7 @@
 
 #main-menu-ul > li:hover {
     background: #112d4e;
+    border-radius: 0 0 15px 15px;
 }
 
 #main-menu-ul > li a {

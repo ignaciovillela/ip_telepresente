@@ -9,7 +9,7 @@ body {
 }
 
 main {
-    margin: 30px 60px 40px 60px;
+    margin: 30px 60px 100px 60px;
 }
 
 footer {
@@ -47,6 +47,7 @@ footer {
     overflow: hidden;
     width: 100%;
     border-radius: 0 0 15px 15px;
+    z-index: 100;
 }
 
 #main-menu-ul > li {
@@ -71,7 +72,7 @@ footer {
 
 @media (max-width: 768px) {
     main {
-        margin: 10px 20px 10px 20px;
+        margin: 10px 20px 100px 20px;
     }
 
     #main-menu {
@@ -96,11 +97,12 @@ footer {
         width: 100%;
         padding: 15px;
         text-align: left;
+        border-radius: 0 15px 15px 0 !important;
     }
 
     #main-menu-ul > li.active {
+        border-radius: 0 15px 15px 0;
         background: #2B5B98;
-        border-radius: 0;
     }
 }
 

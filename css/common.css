@@ -1,6 +1,6 @@
-.m-250px {
-    max-height: 250px;
-    max-width: 250px;
+.m-100pxd {
+    max-height: 180px;
+    max-width: 180px;
     object-fit: cover;
 }
 

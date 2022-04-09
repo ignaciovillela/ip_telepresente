@@ -12,6 +12,7 @@
         <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css">
         <link rel="stylesheet" href="../css/main-menu.css"/>
         <link rel="stylesheet" href="../css/common.css"/>
+        <link rel="stylesheet" href="../css/conocenos.css"/>
     </head>
     <body>
         <header>
@@ -33,7 +34,56 @@
             <script src="../js/main-menu.js"></script>
         </header>
         <main id="main" role="main">
-            Pendiente...
+            <div class="card mb-3 rounded">
+                <div id="carouselExampleControls" class="carousel slide mx-n3" data-ride="carousel">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img class="d-block w-100 rounded" src="../media/conocenos/campus-1.png" alt="campus 1">
+                        </div>
+                        <div class="carousel-item">
+                            <img class="d-block w-100 rounded" src="../media/conocenos/campus-2.png" alt="campus 2">
+                        </div>
+                        <div class="carousel-item">
+                            <img class="d-block w-100 rounded" src="../media/conocenos/campus-3.png" alt="campus 3">
+                        </div>
+                        <div class="carousel-item">
+                            <img class="d-block w-100 rounded" src="../media/conocenos/campus-4.png" alt="campus 3">
+                        </div>
+                    </div>
+                    <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Previous</span>
+                    </a>
+                    <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Next</span>
+                    </a>
+                </div>
+                <div class="card-body">
+                    <h5 class="card-title"><strong>Técnico en administración de empresas mención recursos humanos</strong></h5>
+                    <p class="card-text">
+                        El Técnico en Administración de Empresas es un técnico de nivel superior capacitado para coordinar y ejecutar los procesos administrativos al interior de la organización, en sus distintas áreas de funcionamiento. Ejercerá sus funciones de acuerdo a estándares de calidad y criterios de optimización de recursos, así como de satisfacción de los clientes. La mención Recursos Humanos le entrega, además, las competencias necesarias
+                        para desempeñarse con eficacia en la administración y operación del área de gestión de personas.
+                        La malla curricular se caracteriza por tener un alto contenido práctico, orientada hacia el desarrollo de competencias para el trabajo, lo que
+                        establece el sello distintivo de los profesionales formados en nuestra institución.
+                    </p>
+                </div>
+            </div>
+
+            <div class="card p-5 mt-3 mx-3">
+                <div id="block-ujaen-subsite-page-title" class="block block-core block-page-title-block">
+                    <h1 class="page-title"><span class="field field--name-title field--type-string field--label-hidden">Conócenos</span>
+                    </h1>
+                </div>
+                <div data-drupal-messages-fallback="" class="hidden"></div>
+                <div id="block-ujaen-subsite-content" class="block block-system block-system-main-block">
+                    <article role="article" class="node node--type-seccion-de-micrositio node--view-mode-full">
+                        <div class="node__content">
+                            <div class="clearfix text-formatted field field--name-body field--type-text-with-summary field--label-hidden field__item"><p>El Servicio de Informática tiene definidas sus funciones en el artículo 177 de los Estatutos de la Universidad.</p> <p><em>Art. 177. Servicio de Informática. </em></p> <ol><li><em>El Servicio de Informática de la Universidad es el encargado de la organización general para los sistemas automatizados de información como apoyo a la docencia, la gestión, la investigación y el estudio. </em></li><li><em>Son funciones de este servicio la planificación y gestión de la red informática de la Universidad y los elementos informáticos en la medida en que sean conectados a la misma, la prestación de soporte informático a la gestión de la Universidad y la atención a sus miembros, como usuarios de bienes informáticos de titularidad de la Universidad. </em></li></ol><h4><strong>Misión</strong></h4><p>El Servicio de Informática, dependiente del Vicerrectorado  de Tecnologías de la Información y  la Comunicación, da apoyo a la docencia, investigación, innovación y gestión a la Comunidad Universitaria, facilitando el uso de las Tecnologías de la  Información y la Comunicación de forma integral mediante la mejora continua y la búsqueda de la  excelencia, gestionando eficaz y eficientemente los recursos puestos a su disposición</p><p><strong>Visión</strong></p><ul><li>Un Servicio que contribuya a que la Universidad sea un referente en el ámbito de las Tecnologías de la Información y la Comunicación, que permita mejorar, optimizar y apoyar sus actividades: docencia, investigación, innovación y gestión.</li><li>Un Servicio que persigue la satisfacción de los usuarios internos y externos.</li><li>Un Servicio con una plantilla altamente cualificada, fuertemente motivada e ilusionada con el desempeño de su trabajo y dimensionada para la actividad que desarrolle.</li><li>Un Servicio con infraestructuras adecuadas, competitivas y tecnológicamente actualizado.</li><li>Un Servicio que se relaciona y colabora con su entorno interno y externo (provincial, autonómico, nacional e internacional.</li><li>Un Servicio incentivado y reconocido por la Universidad.</li><li>Un Servicio de excelencia, gestionado por procesos y con una plantilla que actúa por competencias.</li></ul><p><span><span><br></span></span></p></div>
+                        </div>
+                    </article>
+                </div>
+            </div>
         </main>
         <footer class="text-muted">
             <div class="border-top mb-2"></div>
@@ -46,4 +96,9 @@
             </div>
         </footer>
     </body>
+    <script>
+        $('.carousel').carousel({
+            interval: 2000
+        })
+    </script>
 </html>

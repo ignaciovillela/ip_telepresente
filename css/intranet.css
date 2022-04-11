@@ -62,13 +62,13 @@ input:focus{
     margin-right: 5px;
 }
 
-.login_btn{
+.login-btn{
     color: black;
     background-color: #FFC312;
     width: 100px;
 }
 
-.login_btn:hover{
+.login-btn:hover{
     color: black;
     background-color: white;
 }
@@ -79,4 +79,15 @@ input:focus{
 
 .links a{
     margin-left: 4px;
+}
+
+input.yellow-checkbox {
+    height: 25px;
+    width: 50px !important;
+    margin-top: 0;
+    margin-right: 10px;
+}
+
+input.yellow-checkbox:checked {
+    background-color: #FFC312;
 }

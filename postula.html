@@ -33,7 +33,73 @@
             <script src="js/main-menu.js"></script>
         </header>
         <main id="main" role="main">
-            Pendiente...
+            <div class="container">
+                <div class="d-flex justify-content-center h-100">
+                    <div id="success" class="p-3 mb-2 mt-5 px-5 bg-success text-white rounded d-none">
+                        Postulación enviada. Pronto te contactaremos.
+                    </div>
+                    <div id="form-div" class="card">
+                        <div class="card-header">
+                            <h3>Postula</h3>
+                        </div>
+                        <div class="card-body">
+                            <form id="form" action="#">
+                                <div class="input-group form-group">
+                                    <div class="input-group-prepend">
+                                        <span class="input-group-text"><em class="fas fa-clipboard"></em></span>
+                                    </div>
+                                    <input type="text" class="form-control" placeholder="RUT" required>
+                                </div>
+                                <div class="input-group form-group">
+                                    <div class="input-group-prepend">
+                                        <span class="input-group-text"><em class="fas fa-user"></em></span>
+                                    </div>
+                                    <input type="text" class="form-control" placeholder="Nombres" required>
+                                </div>
+                                <div class="input-group form-group">
+                                    <div class="input-group-prepend">
+                                        <span class="input-group-text"><em class="fas fa-user-alt"></em></span>
+                                    </div>
+                                    <input type="text" class="form-control" placeholder="Apellidos" required>
+                                </div>
+                                <div class="input-group form-group">
+                                    <div class="input-group-prepend">
+                                        <span class="input-group-text"><em class="fas fa-at"></em></span>
+                                    </div>
+                                    <input id="email" type="email" class="form-control" placeholder="Correo electrónico" required>
+                                </div>
+                                <div class="input-group form-group">
+                                    <div class="input-group-prepend">
+                                        <span class="input-group-text"><em class="fas fa-location-arrow"></em></span>
+                                    </div>
+                                    <input type="text" class="form-control" placeholder="Dirección" required>
+                                </div>
+                                <div class="input-group form-group">
+                                    <div class="input-group-prepend">
+                                        <span class="input-group-text"><em class="fas fa-building"></em></span>
+                                    </div>
+                                    <select class="form-select" required>
+                                        <option value="">Seleccione su carrera de interés</option>
+                                        <option value="1">Técnico en administración de empresas mención recursos humanos</option>
+                                        <option value="2">Ingeniería en administración de empresas</option>
+                                        <option value="3">Ingeniería en data science</option>
+                                        <option value="4">Ingeniería de ejecución en informática </option>
+                                    </select>
+                                </div>
+
+                                <div class="form-group">
+                                    <input id="enviar" type="submit" value="Postular" class="btn float-right login_btn">
+                                </div>
+                            </form>
+                        </div>
+                        <div class="card-footer">
+                            <div class="d-flex justify-content-center links">
+                                ¿Ya tienes cuenta?&nbsp;<a href="acceso_intranet.html">Accede a la intranet</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </main>
         <footer class="text-muted">
             <div class="border-top mb-2"></div>
@@ -41,9 +107,10 @@
                 <p class="float-right">
                     <a href="#">Subir</a>
                 </p>
-                <p>Algún texto explicativo sobre la página</p>
+                <p>Postula a nuestras carreras en IP Telepresente</p>
                 <p>Visita nuestra <a href="index.html">página de inicio</a> o lee <a href="conocenos.html">acerca de nosotros</a>.</p>
             </div>
         </footer>
     </body>
+    <script src="js/intranet.js"></script>
 </html>

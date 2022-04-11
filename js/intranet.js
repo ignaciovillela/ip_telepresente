@@ -10,9 +10,9 @@
         submitButton.setAttribute('disabled', 'disabled');
         setTimeout(() => {
             success.classList.remove('d-none');
+            formDiv.classList.add('d-none');
             const user = email.value.split('@')[0].replace('.', ' ');
             success.innerHTML += `<strong>${user}</strong>`;
-            formDiv.classList.add('d-none');
         }, 1000);
     });
 })();

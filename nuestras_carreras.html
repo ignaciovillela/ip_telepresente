@@ -100,13 +100,41 @@
             </div>
         </main>
         <footer class="text-muted">
-            <div class="border-top"></div>
+            <div class="border-top mb-2"></div>
             <div class="container">
-                <p class="float-end">
-                    <a href="#">Subir</a>
+                <a class="float-end" href="#" data-bs-toggle="modal" data-bs-target="#certificado-form">
+                    Validación de certificados
+                </a>
+                <div class="modal fade" id="certificado-form" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="certificado-title" aria-hidden="true">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+                            <form>
+                                <div class="modal-header">
+                                    <h5 class="modal-title" id="certificado-title">Validación de certificado</h5>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                </div>
+                                <div class="modal-body">
+                                    <div class="mb-3">
+                                        <label for="certificado" class="form-label">Certificado</label>
+                                        <input type="text" class="form-control" id="certificado" placeholder="Ingrese su ID de certificado" required>
+                                    </div>
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="reset" class="btn btn-secondary" data-bs-dismiss="modal">Cancelar</button>
+                                    <button type="submit" class="btn btn-primary">Guardar</button>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+
+                <p>Contáctanos al email <a href="mailto:contacto@telepresente.cl">contacto@telepresente.cl</a></p>
+                <p>Visitanos en Calle 1, Santiago, Región metropolitana o en nuestras redes sociales
+                    &nbsp;<a href="https://linktr.ee/duocucsedeantoniovaras">Facebook</a>
+                    &nbsp;<a href="https://linktr.ee/duocucsedeantoniovaras">Instagram</a>
+                    &nbsp;<a href="https://linktr.ee/duocucsedeantoniovaras">YouTube</a>
+                    &nbsp;<a href="https://linktr.ee/duocucsedeantoniovaras">Linkedin</a>
                 </p>
-                <p>Conoce nuestras carreras</p>
-                <p>Visita nuestra <a href="index.html">página de inicio</a> o lee <a href="conocenos.html">acerca de nosotros</a>.</p>
             </div>
         </footer>
     </body>

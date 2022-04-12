@@ -1,5 +1,11 @@
-
 .h-250px {
     height: 250px;
     object-fit: cover;
+}
+
+.carousel .carousel-item img {
+    max-height: 400px;
+    min-width: auto;
+        object-fit: cover;
+
 }

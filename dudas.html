@@ -40,7 +40,7 @@
                     <div class="col-12 col-lg-8 mt-3 mt-lg-0">
                         <div class="card p-3 pt-0">
                             <div class="overflow-scroll" style="max-height: 700px;">
-                                <div class="row questions">
+                                <div id="questions" class="row questions">
                                     <div class="col-12 mt-3">
                                         <div class="card">
                                             <div class="card-header">
@@ -174,24 +174,24 @@
                             <div class="card-body">
                                 <form id="form" action="#">
                                     <div class="input-group mb-3">
-                                        <span class="input-group-text" id="rut"><em class="fas fa-clipboard"></em></span>
-                                        <input type="text" class="form-control" placeholder="RUT" aria-label="RUT" aria-describedby="rut">
+                                        <span class="input-group-text"><em class="fas fa-clipboard"></em></span>
+                                        <input id="rut" type="text" class="form-control" placeholder="RUT" aria-label="RUT">
                                     </div>
                                     <div class="input-group mb-3">
-                                        <span class="input-group-text" id="nombre"><em class="fas fa-user"></em></span>
-                                        <input type="text" class="form-control" placeholder="Nombre" aria-label="Nombre" aria-describedby="nombre">
+                                        <span class="input-group-text"><em class="fas fa-user"></em></span>
+                                        <input id="nombre" type="text" class="form-control" placeholder="Nombre" aria-label="Nombre">
                                     </div>
                                     <div class="input-group mb-3">
-                                        <span class="input-group-text" id="correo"><em class="fas fa-clipboard"></em></span>
-                                        <input type="email" class="form-control" placeholder="Correo electrónico" aria-label="Correo electrónico" aria-describedby="correo">
+                                        <span class="input-group-text"><em class="fas fa-clipboard"></em></span>
+                                        <input id="correo" type="email" class="form-control" placeholder="Correo electrónico" aria-label="Correo electrónico" required>
                                     </div>
                                     <div class="input-group mb-3">
-                                        <span class="input-group-text" id="titulo"><em class="fas fa-clipboard"></em></span>
-                                        <input type="text" class="form-control" placeholder="Título" aria-label="Título" aria-describedby="titulo">
+                                        <span class="input-group-text"><em class="fas fa-clipboard"></em></span>
+                                        <input id="titulo" type="text" class="form-control" placeholder="Título" aria-label="Título" required>
                                     </div>
                                     <div class="input-group mb-3">
-                                        <span class="input-group-text" id="pregunta"><em class="fas fa-align-left"></em></span>
-                                        <textarea class="form-control" rows="10" cols="50" placeholder="Escribe tu pregunta aquí" aria-label="RUT" aria-describedby="pregunta" required></textarea>
+                                        <span class="input-group-text"><em class="fas fa-align-left"></em></span>
+                                        <textarea id="pregunta" class="form-control" rows="10" cols="50" placeholder="Escribe tu pregunta aquí" aria-label="RUT" required></textarea>
                                     </div>
 
                                     <div class="form-group">
@@ -243,5 +243,32 @@
             </div>
         </footer>
     </body>
-    <script src="js/intranet.js"></script>
+    <script>
+        const questions = document.querySelector('#questions');
+        const form = document.querySelector('#form');
+        const nombre = document.querySelector('#nombre');
+        const titulo = document.querySelector('#titulo');
+        const pregunta = document.querySelector('#pregunta');
+        form.addEventListener('submit', (event) => {
+            event.preventDefault();
+            const question = `
+                <div class="col-12 mt-3">
+                    <div class="card">
+                        <div class="card-header">
+                            <h3>${titulo.value}</h3>
+                        </div>
+                        <div class="card-body">
+                            <span class="answer">
+                                <strong>${nombre.value || 'Anónimo'}</strong>: ${pregunta.value.replace(/@(\w+)/i, '<span class="mention">@$1</span>')}
+                            </span>
+                        </div>
+                        <div class="card-footer">Hace instantes</div>
+                    </div>
+                </div>
+            `;
+            console.log(question)
+            questions.innerHTML = question + questions.innerHTML;
+            form.reset();
+        });
+    </script>
 </html>

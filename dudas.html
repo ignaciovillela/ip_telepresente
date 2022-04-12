@@ -259,7 +259,7 @@
                         </div>
                         <div class="card-body">
                             <span class="answer">
-                                <strong>${nombre.value || 'Anónimo'}</strong>: ${pregunta.value.replace(/@(\w+)/i, '<span class="mention">@$1</span>')}
+                                <strong>${nombre.value || 'Anónimo'}</strong>: ${pregunta.value.replaceAll(/@(\w+)/g, '<span class="mention">@$1</span>')}
                             </span>
                         </div>
                         <div class="card-footer">Hace instantes</div>

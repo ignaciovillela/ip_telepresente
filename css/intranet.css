@@ -62,7 +62,7 @@ input:focus {
     margin-right: 5px;
 }
 
-.login-btn {
+input.login-btn {
     color: black;
     background-color: #FFC312;
     width: 100px;

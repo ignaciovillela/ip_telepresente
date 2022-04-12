@@ -6,6 +6,33 @@
 .carousel .carousel-item img {
     max-height: 400px;
     min-width: auto;
-        object-fit: cover;
+    object-fit: cover;
+}
 
+ul.no-bullets {
+    list-style-type: none;
+    padding: 0;
+}
+
+ul.no-bullets li {
+    list-style-type: none;
+}
+
+span.mention {
+    color: #229df4;
+    cursor: pointer;
+}
+
+span.answer {
+    position: relative;
+}
+.questions li {
+    margin-top: 10px !important;
+    margin-bottom: 10px !important;
+}
+span.answer:hover::after {
+    content: 'Responder';
+    margin-left: 5px;
+    color: #989898;
+    z-index: 100;
 }

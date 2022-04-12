@@ -4,6 +4,11 @@
         <meta charset="UTF-8">
         <title>Preguntas Frecuentes</title>
         <meta name="viewport" content="width=device-width">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css">
+        <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.slim.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"></script>
         <link rel="icon" type="image/x-icon" href="media/favicon-32.png">
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css">
         <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
@@ -33,7 +38,49 @@
             <script src="js/main-menu.js"></script>
         </header>
         <main id="main" role="main">
-            Pendiente...
+            <section>
+                <p>Preguntas Frecuentes</p>
+                <div id="accordion">
+                    <div class="card">
+                      <div class="card-header">
+                        <a class="card-link" data-toggle="collapse" href="#collapseOne">
+                          ¿Cómo puedo postular a alguna carrera?
+                        </a>
+                      </div>
+                      <div id="collapseOne" class="collapse show" data-parent="#accordion">
+                        <div class="card-body">
+                          Para postular a cualquiera de nuestras carreras, solo debes ingresar a nuestro sitio oficial,
+                          dirigirte a la pestaña "Postula" e ingresar tus datos, evaluaremos tu solicitud y te contactaremos.
+                        </div>
+                      </div>
+                    </div>
+                    <div class="card">
+                      <div class="card-header">
+                        <a class="collapsed card-link" data-toggle="collapse" href="#collapseTwo">
+                          ¿Qué carreras tiene el instituto?
+                      </a>
+                      </div>
+                      <div id="collapseTwo" class="collapse" data-parent="#accordion">
+                        <div class="card-body">
+                          Las carreras impartidas en nuestra institución son: Técnico en administración de empresas mención recursos humanos,
+                          Ingeniería en administración de empresas, Ingeniería en data science e Ingeniería en ejecución Informática.
+                        </div>
+                      </div>
+                    </div>
+                    <div class="card">
+                      <div class="card-header">
+                        <a class="collapsed card-link" data-toggle="collapse" href="#collapseThree">
+                          ¿Cuantos años duran las carreras?
+                        </a>
+                      </div>
+                      <div id="collapseThree" class="collapse" data-parent="#accordion">
+                        <div class="card-body">
+                        Las carreras tienen una duración de 4 años más un semestre de práctica profesional.
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+            </section>
         </main>
         <footer class="text-muted">
             <div class="border-top mb-2"></div>
@@ -42,7 +89,8 @@
                     <a href="#">Subir</a>
                 </p>
                 <p>Algún texto explicativo sobre la página</p>
-                <p>Visita nuestra <a href="index.html">página de inicio</a> o lee <a href="conocenos.html">acerca de nosotros</a>.</p>
+                <p>Visita nuestra <a href="index.html">página de inicio</a> o lee <a href="conocenos.html">acerca de nosotros</a>.</p>  
+                <p>Visítanos y enterate de todo en nuestras redes sociales <a href="https://linktr.ee/duocucsedeantoniovaras">Linktr</a>.</p>
             </div>
         </footer>
     </body>

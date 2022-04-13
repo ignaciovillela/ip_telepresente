@@ -37,14 +37,14 @@
         <main role="main">
             <div class="container">
                 <div class="row">
-                    <div class="col-12 col-lg-8 mt-3 mt-lg-0">
+                    <div id="main-questions" class="col-12 col-lg-8 mt-3 mt-lg-0 d-none">
                         <div class="card p-3 pt-0">
                             <div class="overflow-scroll" style="max-height: 700px;">
                                 <div id="questions" class="row questions">
-                                    <div class="col-12 mt-3">
+                                    <div class="col-12 question mt-3" data-career="1">
                                         <div class="card">
                                             <div class="card-header">
-                                                <h3>Duración Ingeniería</h3>
+                                                <h3>Duración Técnico en administración</h3>
                                             </div>
                                             <div class="card-body">
                                                 <span class="answer">
@@ -84,10 +84,11 @@
                                             <div class="card-footer">Hace 1 hora</div>
                                         </div>
                                     </div>
-                                    <div class="col-12 mt-3">
+
+                                    <div class="col-12 question mt-3" data-career="2">
                                         <div class="card">
                                             <div class="card-header">
-                                                <h3>Comienzo de semestre</h3>
+                                                <h3>Comienzo de semestre Ingeniería en administración</h3>
                                             </div>
                                             <div class="card-body">
                                                 <span class="answer">
@@ -119,14 +120,59 @@
                                             <div class="card-footer">Hace 3 horas</div>
                                         </div>
                                     </div>
-                                    <div class="col-12 mt-3">
+                                    <div class="col-12 question mt-3" data-career="2">
                                         <div class="card">
                                             <div class="card-header">
-                                                <h3>Titulación</h3>
+                                                <h3>Duración Ingeniería en administración</h3>
                                             </div>
                                             <div class="card-body">
                                                 <span class="answer">
-                                                    <strong>Emilia Soto</strong>: Buen día ip <span class="mention">@Telepresente</span>. Estoy muy interesado en matricularme, pero no estoy seguro de mi
+                                                    <strong>Alejandro Abondano</strong>: Me gustaría saber cuantos años dura la carrera <strong>Ingeniería en data science</strong>
+                                                </span>
+                                                <ul class="mt-3 no-bullets">
+                                                    <li>
+                                                        <span class="answer">Camilo Rodríguez: <span class="mention">@Alejandro Abondano</span> esta carrera dura 5 semestres</span>
+                                                        <ul>
+                                                            <li>
+                                                                <span class="answer"><strong>Alejandro Abondano</strong>: Gracias <span class="mention">@Camilo Rodríguez</span>. Pero cuanto es en años</span>
+                                                            </li>
+                                                            <li>
+                                                                <ul>
+                                                                    <li>
+                                                                        <span class="answer">Camilo Rodríguez: <span class="mention">@Alejandro Abondano</span> 5 semestres son 2.5 años. Saludos.</span>
+                                                                    </li>
+                                                                </ul>
+                                                            </li>
+                                                        </ul>
+                                                    </li>
+                                                    <li>
+                                                        <span class="answer">Carolina Pintor: <span class="mention">@Alejandro Abondano</span> La carrera dura 2 años y medio años</span>
+                                                        <ul>
+                                                            <li>
+                                                                <span class="answer"><strong>Alejandro Abondano</strong>: Muchas gracias <span class="mention">@Carolina Pintor</span>.</span>
+                                                                <ul>
+                                                                    <li>
+                                                                        <span class="answer">Carolina Pintor: <span class="mention">@Alejandro Abondano</span> De nada 😊</span>
+                                                                    </li>
+                                                                </ul>
+                                                            </li>
+                                                        </ul>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                            <div class="card-footer">Hace 1 hora</div>
+                                        </div>
+                                    </div>
+
+                                    <div class="col-12 question mt-3" data-career="3">
+                                        <div class="card">
+                                            <div class="card-header">
+                                                <h3>Titulación data science</h3>
+                                            </div>
+                                            <div class="card-body">
+                                                <span class="answer">
+                                                    <strong>Emilia Soto</strong>: Buen día ip <span class="mention">@Telepresente</span>.
+                                                    Estoy muy interesado en matricularme, pero no estoy seguro de mi
                                                     perfil de egreso, ¿Qué título obtendré al terminar mi carrera?
                                                 </span>
                                                 <ul class="mt-3 no-bullets">
@@ -134,7 +180,7 @@
                                                         <span class="answer">Telepresente: Estimada Emilia, eso depende de la carrera que escoja</span>
                                                         <ul>
                                                             <li>
-                                                                <span class="answer"><strong>Emilia Soto</strong></strong>: <span class="mention">@Telepresente</span> La carrera es <strong>Ingeniería en administración de empresas</strong></span>
+                                                                <span class="answer"><strong>Emilia Soto</strong>: <span class="mention">@Telepresente</span> La carrera es <strong>Ingeniería en administración de empresas</strong></span>
                                                             </li>
                                                             <li>
                                                                 <ul>
@@ -159,15 +205,228 @@
                                             <div class="card-footer">Hace 2 días</div>
                                         </div>
                                     </div>
+                                    <div class="col-12 question mt-3" data-career="3">
+                                        <div class="card">
+                                            <div class="card-header">
+                                                <h3>Duración Ingeniería data science</h3>
+                                            </div>
+                                            <div class="card-body">
+                                                <span class="answer">
+                                                    <strong>Alejandro Abondano</strong>: Me gustaría saber cuantos años dura la carrera <strong>Ingeniería en data science</strong>
+                                                </span>
+                                                <ul class="mt-3 no-bullets">
+                                                    <li>
+                                                        <span class="answer">Camilo Rodríguez: <span class="mention">@Alejandro Abondano</span> esta carrera dura 5 semestres</span>
+                                                        <ul>
+                                                            <li>
+                                                                <span class="answer"><strong>Alejandro Abondano</strong>: Gracias <span class="mention">@Camilo Rodríguez</span>. Pero cuanto es en años</span>
+                                                            </li>
+                                                            <li>
+                                                                <ul>
+                                                                    <li>
+                                                                        <span class="answer">Camilo Rodríguez: <span class="mention">@Alejandro Abondano</span> 5 semestres son 2.5 años. Saludos.</span>
+                                                                    </li>
+                                                                </ul>
+                                                            </li>
+                                                        </ul>
+                                                    </li>
+                                                    <li>
+                                                        <span class="answer">Carolina Pintor: <span class="mention">@Alejandro Abondano</span> La carrera dura 2 años y medio años</span>
+                                                        <ul>
+                                                            <li>
+                                                                <span class="answer"><strong>Alejandro Abondano</strong>: Muchas gracias <span class="mention">@Carolina Pintor</span>.</span>
+                                                                <ul>
+                                                                    <li>
+                                                                        <span class="answer">Carolina Pintor: <span class="mention">@Alejandro Abondano</span> De nada 😊</span>
+                                                                    </li>
+                                                                </ul>
+                                                            </li>
+                                                        </ul>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                            <div class="card-footer">Hace 1 hora</div>
+                                        </div>
+                                    </div>
+                                    <div class="col-12 question mt-3" data-career="3">
+                                        <div class="card">
+                                            <div class="card-header">
+                                                <h3>Comienzo de semestre data science</h3>
+                                            </div>
+                                            <div class="card-body">
+                                                <span class="answer">
+                                                    <strong>Juan Perez</strong>: Tengo dudas acerca de cuando comienza el semestre.
+                                                    No me queda del todo claro con la información de la página.
+                                                </span>
+                                                <ul class="mt-3 no-bullets">
+                                                    <li>
+                                                        <span class="answer">Juanita: Las clases comienzan la segunda semana de marzo</span>
+                                                        <ul>
+                                                            <li>
+                                                                <span class="answer"><strong>Juan Perez</strong>: Muchas gracias <span class="mention">@Juanita</span></span>
+                                                            </li>
+                                                            <li>
+                                                                <span class="answer">Juanita: Por nada <span class="mention">@Juan Perez</span></span>
+                                                            </li>
+                                                        </ul>
+                                                    </li>
+                                                    <li>
+                                                        <span class="answer">Anónimo: Eso lo deberías saber ¬¬</span>
+                                                        <ul>
+                                                            <li>
+                                                                <span class="answer">Juanita: Eso es muy descortés <span class="mention">@Anónimo</span></span>
+                                                            </li>
+                                                        </ul>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                            <div class="card-footer">Hace 3 horas</div>
+                                        </div>
+                                    </div>
+
+                                    <div class="col-12 question mt-3" data-career="4">
+                                        <div class="card">
+                                            <div class="card-header">
+                                                <h3>Comienzo de semestre Ingeniería de ejecución</h3>
+                                            </div>
+                                            <div class="card-body">
+                                                <span class="answer">
+                                                    <strong>Juan Perez</strong>: Tengo dudas acerca de cuando comienza el semestre.
+                                                    No me queda del todo claro con la información de la página.
+                                                </span>
+                                                <ul class="mt-3 no-bullets">
+                                                    <li>
+                                                        <span class="answer">Juanita: Las clases comienzan la segunda semana de marzo</span>
+                                                        <ul>
+                                                            <li>
+                                                                <span class="answer"><strong>Juan Perez</strong>: Muchas gracias <span class="mention">@Juanita</span></span>
+                                                            </li>
+                                                            <li>
+                                                                <span class="answer">Juanita: Por nada <span class="mention">@Juan Perez</span></span>
+                                                            </li>
+                                                        </ul>
+                                                    </li>
+                                                    <li>
+                                                        <span class="answer">Anónimo: Eso lo deberías saber ¬¬</span>
+                                                        <ul>
+                                                            <li>
+                                                                <span class="answer">Juanita: Eso es muy descortés <span class="mention">@Anónimo</span></span>
+                                                            </li>
+                                                        </ul>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                            <div class="card-footer">Hace 3 horas</div>
+                                        </div>
+                                    </div>
+                                    <div class="col-12 question mt-3" data-career="4">
+                                        <div class="card">
+                                            <div class="card-header">
+                                                <h3>Titulación Ingeniería de ejecución</h3>
+                                            </div>
+                                            <div class="card-body">
+                                                <span class="answer">
+                                                    <strong>Emilia Soto</strong>: Buen día ip <span class="mention">@Telepresente</span>.
+                                                    Estoy muy interesado en matricularme, pero no estoy seguro de mi
+                                                    perfil de egreso, ¿Qué título obtendré al terminar mi carrera?
+                                                </span>
+                                                <ul class="mt-3 no-bullets">
+                                                    <li>
+                                                        <span class="answer">Telepresente: Estimada Emilia, eso depende de la carrera que escoja</span>
+                                                        <ul>
+                                                            <li>
+                                                                <span class="answer"><strong>Emilia Soto</strong>: <span class="mention">@Telepresente</span> La carrera es <strong>Ingeniería en administración de empresas</strong></span>
+                                                            </li>
+                                                            <li>
+                                                                <ul>
+                                                                    <li>
+                                                                <span class="answer">
+                                                                    Telepresente: El egresado de esta carrera
+                                                                    podrá desempeñarse en los ámbitos de gestión de empresas, economía y negocios
+                                                                    de las diferentes áreas funcionales de una organización.
+                                                                </span>
+                                                                    </li>
+                                                                    <li>
+                                                                <span class="answer">
+                                                                    <strong>Emilia Soto</strong>: Muchas gracias
+                                                                </span>
+                                                                    </li>
+                                                                </ul>
+                                                            </li>
+                                                        </ul>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                            <div class="card-footer">Hace 2 días</div>
+                                        </div>
+                                    </div>
+                                    <div class="col-12 question mt-3" data-career="4">
+                                        <div class="card">
+                                            <div class="card-header">
+                                                <h3>Duración Ingeniería de ejecución</h3>
+                                            </div>
+                                            <div class="card-body">
+                                                <span class="answer">
+                                                    <strong>Alejandro Abondano</strong>: Me gustaría saber cuantos años dura la carrera <strong>Ingeniería en data science</strong>
+                                                </span>
+                                                <ul class="mt-3 no-bullets">
+                                                    <li>
+                                                        <span class="answer">Camilo Rodríguez: <span class="mention">@Alejandro Abondano</span> esta carrera dura 5 semestres</span>
+                                                        <ul>
+                                                            <li>
+                                                                <span class="answer"><strong>Alejandro Abondano</strong>: Gracias <span class="mention">@Camilo Rodríguez</span>. Pero cuanto es en años</span>
+                                                            </li>
+                                                            <li>
+                                                                <ul>
+                                                                    <li>
+                                                                        <span class="answer">Camilo Rodríguez: <span class="mention">@Alejandro Abondano</span> 5 semestres son 2.5 años. Saludos.</span>
+                                                                    </li>
+                                                                </ul>
+                                                            </li>
+                                                        </ul>
+                                                    </li>
+                                                    <li>
+                                                        <span class="answer">Carolina Pintor: <span class="mention">@Alejandro Abondano</span> La carrera dura 2 años y medio años</span>
+                                                        <ul>
+                                                            <li>
+                                                                <span class="answer"><strong>Alejandro Abondano</strong>: Muchas gracias <span class="mention">@Carolina Pintor</span>.</span>
+                                                                <ul>
+                                                                    <li>
+                                                                        <span class="answer">Carolina Pintor: <span class="mention">@Alejandro Abondano</span> De nada 😊</span>
+                                                                    </li>
+                                                                </ul>
+                                                            </li>
+                                                        </ul>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                            <div class="card-footer">Hace 1 hora</div>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
                         </div>
                     </div>
                     <div class="col-12 col-lg-4 mt-3 mt-lg-0">
-                        <div id="success" class="p-3 mb-2 mt-5 px-5 bg-success text-white rounded d-none">
-                            Pregunta enviada. Pronto te contactaremos.
+                        <div class="row">
+                            <div id="select-message" class="col mb-2">
+                                <span>Para comenzar</span>
+                            </div>
+                            <div class="col-12">
+                                <div class="input-group mb-3">
+                                    <span class="input-group-text"><em class="fas fa-clipboard"></em></span>
+                                    <select id="carrera" class="form-select" aria-label="Carrera">
+                                        <option selected class="d-none">Seleccione una carrera</option>
+                                        <option value="1">Técnico en administración de empresas mención recursos humanos</option>
+                                        <option value="2">Ingeniería en administración de empresas</option>
+                                        <option value="3">Ingeniería en data science</option>
+                                        <option value="4">Ingeniería de ejecución en informática</option>
+                                    </select>
+                                </div>
+                            </div>
                         </div>
-                        <div id="form-div" class="card">
+
+                        <div id="form-div" class="card d-none">
                             <div class="card-header">
                                 <h3>¿Tienes más dudas?</h3>
                             </div>
@@ -244,15 +503,35 @@
         </footer>
     </body>
     <script>
-        const questions = document.querySelector('#questions');
+        const selectMessage = document.querySelector('#select-message');
+        const formDiv = document.querySelector('#form-div');
+        const questionDiv = document.querySelector('#questions');
+        const mainQuestions = document.querySelector('#main-questions');
         const form = document.querySelector('#form');
+        const carrera = document.querySelector('#carrera');
         const nombre = document.querySelector('#nombre');
         const titulo = document.querySelector('#titulo');
         const pregunta = document.querySelector('#pregunta');
+
+        carrera.addEventListener('change', () => {
+            console.log('asd')
+            const carreraValue = carrera.value;
+            selectMessage.classList.add('d-none');
+            mainQuestions.classList.remove('d-none');
+            formDiv.classList.remove('d-none');
+            const questions = mainQuestions.querySelectorAll('.question');
+            questions.forEach(value => {
+                if (value.dataset.career === carreraValue) {
+                    value.classList.remove('d-none');
+                } else {
+                    value.classList.add('d-none');
+                }
+            });
+        });
         form.addEventListener('submit', (event) => {
             event.preventDefault();
             const question = `
-                <div class="col-12 mt-3">
+                <div class="col-12 question mt-3" data-career="${carrera.value}">
                     <div class="card">
                         <div class="card-header">
                             <h3>${titulo.value}</h3>
@@ -266,8 +545,7 @@
                     </div>
                 </div>
             `;
-            console.log(question)
-            questions.innerHTML = question + questions.innerHTML;
+            questionDiv.innerHTML = question + questionDiv.innerHTML;
             form.reset();
         });
     </script>

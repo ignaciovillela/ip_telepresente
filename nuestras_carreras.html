@@ -35,11 +35,46 @@
             <script src="js/main-menu.js"></script>
         </header>
         <main id="main" role="main">
+            <div class="modal fade" id="malla-modal" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="malla-title" aria-hidden="true">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <form id="malla-form" action="#">
+                            <div class="modal-header">
+                                <h5 class="modal-title">Descargar malla</h5>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body">
+                                <p id="malla-modal-text" class="p-3 pt-0 m-0"></p>
+                                <div class="input-group mb-3">
+                                    <span class="input-group-text" id="rut"><em class="fas fa-clipboard"></em></span>
+                                    <input type="text" class="form-control" placeholder="RUT" aria-label="RUT" aria-describedby="rut" required>
+                                </div>
+                                <div class="input-group mb-3">
+                                    <span class="input-group-text" id="nombres"><em class="fas fa-user"></em></span>
+                                    <input type="text" class="form-control" placeholder="Nombres" aria-label="Nombres" aria-describedby="nombres" required>
+                                </div>
+                                <div class="input-group mb-3">
+                                    <span class="input-group-text" id="apellidos"><em class="fas fa-user-alt"></em></span>
+                                    <input type="text" class="form-control" placeholder="Apellidos" aria-label="Apellidos" aria-describedby="apellidos" required>
+                                </div>
+                                <div class="input-group mb-3">
+                                    <span class="input-group-text" id="email"><em class="fas fa-at"></em></span>
+                                    <input type="email" class="form-control" placeholder="Correo electrónico" aria-label="Correo electrónico" aria-describedby="email" required>
+                                </div>
+                            </div>
+                            <div class="modal-footer">
+                                <button type="reset" class="btn btn-secondary" data-bs-dismiss="modal">Cancelar</button>
+                                <button type="submit" class="btn btn-primary">Guardar</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
             <div class="container">
                 <div class="row">
                     <div class="col-12 col-md-6">
                         <div class="card mb-3">
-                            <a href="Prueba_1_PW.pdf" download>
+                            <a class="float-end" href="#" data-bs-toggle="modal" data-bs-target="#malla-modal" data-malla-url="malla/tec-administracion.pdf">
                                 <img class="card-img-top h-250px" src="media/carreras/tec-administracion.png" alt="Programación">
                             </a>
                             <div class="card-body">
@@ -52,13 +87,12 @@
                                     La malla curricular se caracteriza por tener un alto contenido práctico, orientada hacia el desarrollo de competencias para el trabajo, lo que
                                     establece el sello distintivo de los profesionales formados en nuestra institución.
                                 </p>
-                                <a class="btn btn-primary float-end" href="Prueba_1_PW.pdf" download>Descarga malla</a>
                             </div>
                         </div>
                     </div>
                     <div class="col-12 col-md-6">
                         <div class="card mb-3">
-                            <a href="Prueba_1_PW.pdf" download>
+                            <a class="float-end" href="#" data-bs-toggle="modal" data-bs-target="#malla-modal" data-malla-url="malla/ing-administracion.pdf">
                                 <img class="card-img-top h-250px" src="media/carreras/ing-administracion.png" alt="Redes">
                             </a>
                             <div class="card-body">
@@ -69,13 +103,12 @@
                                     El Ingeniero/a en Administración de Empresas es un profesional preparado para gestionar estratégicamente recursos y procesos administrativos de áreas funcionales de empresas y organizaciones, con capacidad de adaptación al entorno en el contexto de una economía globalizada. Su proceso de formación entrega herramientas y habilidades para participar en equipos multidisciplinarios y desempeñarse activamente en las
                                     diferentes áreas de gestión de las organizaciones, creando valor en función de los objetivos organizacionales.
                                 </p>
-                                <a class="btn btn-primary float-end" href="Prueba_1_PW.pdf" download>Descarga malla</a>
                             </div>
                         </div>
                     </div>
                     <div class="col-12 col-md-6">
                         <div class="card mb-3">
-                            <a href="Prueba_1_PW.pdf" download>
+                            <a class="float-end" href="#" data-bs-toggle="modal" data-bs-target="#malla-modal" data-malla-url="malla/ing-data-science.pdf">
                                 <img class="card-img-top h-250px" src="media/carreras/ing-data-science.png" alt="Programación">
                             </a>
                             <div class="card-body">
@@ -86,13 +119,12 @@
                                     El Ingeniero de Ejecución en Informática es un profesional capacitado para realizar y proponer soluciones integrales en desarrollo de sistemas, incorporando el análisis, metodologías, pruebas e implementación de soluciones seguras. Su formación lo habilita para formular, evaluar y gestionar proyectos informáticos, conforme a estándares de calidad técnica y a los requerimientos del cliente. La carrera se encuentra alineada con perfiles ocupacionales definidos por ChileValora, incorporados en marco de calificaciones técnicos profesionales del MINEDUC; las
                                     competencias del perfil de egreso están desarrolladas bajo el marco de competencias SFIA (Skills Framework for the Information Age).
                                 </p>
-                                <a class="btn btn-primary float-end" href="Prueba_1_PW.pdf" download>Descarga malla</a>
                             </div>
                         </div>
                     </div>
                     <div class="col-12 col-md-6">
                         <div class="card mb-3">
-                            <a href="Prueba_1_PW.pdf" download>
+                            <a class="float-end" href="#" data-bs-toggle="modal" data-bs-target="#malla-modal" data-malla-url="malla/eje-informatica.pdf">
                                 <img class="card-img-top h-250px" src="media/carreras/eje-informatica.png" alt="Redes">
                             </a>
                             <div class="card-body">
@@ -100,9 +132,8 @@
                                 <p><strong>Duración 5 semestres</strong></p>
                                 <p><strong>Jornadas: Diurno, Vespertino</strong></p>
                                 <p class="card-text">
-                                     El Ingeniero de Ejecución en Informática es un profesional capacitado para realizar y proponer soluciones integrales en desarrollo de sistemas, incorporando el análisis, metodologías, pruebas e implementación de soluciones seguras. Su formación lo habilita para formular, evaluar y
+                                    El Ingeniero de Ejecución en Informática es un profesional capacitado para realizar y proponer soluciones integrales en desarrollo de sistemas, incorporando el análisis, metodologías, pruebas e implementación de soluciones seguras. Su formación lo habilita para formular, evaluar y
                                 </p>
-                                <a class="btn btn-primary float-end" href="Prueba_1_PW.pdf" download>Descarga malla</a>
                             </div>
                         </div>
                     </div>
@@ -148,4 +179,27 @@
             </div>
         </footer>
     </body>
+    <script>
+        const mallaModal = $('#malla-modal');
+        const mallaForm = document.querySelector('#malla-form');
+        const mallaModalText = document.querySelector('#malla-modal-text');
+        const mallaButtons = document.querySelectorAll('[data-bs-target="#malla-modal"]');
+
+        let downloadMallaUrl;
+
+        mallaButtons.forEach(mallaButton => {
+            mallaButton.addEventListener('click', () => {
+                const card = mallaButton.parentElement;
+                mallaModalText.textContent = card.querySelector('.card-title').innerText;
+                downloadMallaUrl = mallaButton.dataset.mallaUrl;
+            });
+        });
+        $('#malla-form').on('submit', () => {
+            const link = document.createElement('a');
+            link.href = downloadMallaUrl;
+            link.download = downloadMallaUrl;
+            link.click();
+            mallaModal.modal('hide');
+        });
+    </script>
 </html>

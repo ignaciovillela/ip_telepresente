@@ -19,7 +19,7 @@ footer {
     margin-top: auto;
     margin-bottom: auto;
     width: 400px;
-    background-color: rgba(0,0,0,0.85) !important;
+    background-color: rgba(0, 0, 0, 0.85) !important;
 }
 
 .social_icon span {
@@ -41,7 +41,7 @@ footer {
     width: 50px;
     background-color: #FFC312;
     color: black;
-    border:0 !important;
+    border: 0 !important;
 }
 
 input:focus {
@@ -54,8 +54,7 @@ input:focus {
     color: white;
 }
 
-.remember input
-{
+.remember input {
     width: 20px;
     height: 20px;
     margin-left: 15px;

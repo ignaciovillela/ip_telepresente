@@ -1,4 +1,4 @@
-(function() {
+(function () {
     const form = document.querySelector('#form');
     const submitButton = document.querySelector('#enviar');
     const email = document.querySelector('#email');

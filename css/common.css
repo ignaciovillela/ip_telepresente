@@ -26,10 +26,12 @@ span.mention {
 span.answer {
     position: relative;
 }
+
 .questions li {
     margin-top: 10px;
     margin-bottom: 10px;
 }
+
 span.answer:hover::after {
     content: 'Responder';
     margin-left: 5px;
